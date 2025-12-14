@@ -14,15 +14,10 @@ body {
 body {
   max-width: 100vw;
   height: 100vh;
-  color: white;
-  position: relative;
-
-  background-color: #879a98;
-  background-color: #080a40;
-  background-color: #030526;
-  background-color: #fbfaf4;
-
   margin: 0 auto;
+  color: white;
+  background-color: #fbfaf4;
+  position: relative;
 }
 
 main {
@@ -37,10 +32,9 @@ body::before {
   position: fixed;
   left: 40px;
   top: 0;
-  width: 0.5px;
+  width: 1px;
   height: 100vh;
   z-index: 100;
-  background-color: grey;
   background-color: #ed5c5c;
 }
 
@@ -49,7 +43,7 @@ body::before {
   display: flex;
   align-items: center;
   padding: 0 15px 0 60px;
-  border-bottom: 0.5px solid #ed5c5c;
+  border-bottom: 1px solid #ed5c5c;
   flex-shrink: 0;
 }
 
@@ -64,8 +58,6 @@ body::before {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  color: #d4cb5a;
-  color: #d9c148;
   color: #030526;
 }
 
@@ -74,7 +66,7 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  display: none; /* Mobile hidden*/
 }
 
 .sidebar {
@@ -83,9 +75,9 @@ body::before {
   left: 0px;
   width: 40px;
   height: calc(100vh - 40px);
-  writing-mode: sideways-lr;
+  writing-mode: sideways-lr; /* Text from bottom to top */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px 5px;
   z-index: 50;
@@ -94,12 +86,8 @@ body::before {
 .sidebar__text {
   font-size: 0.8rem;
   line-height: 1.3;
+  font-weight: 400;
   text-align: center;
-  /*color: #ed5c5c;*/
-  color: #d4cb5a;
-  color: #d9c148;
-  color: #d9145c;
-  color: #d9c148;
   color: #030526;
 }
 
@@ -112,50 +100,51 @@ body::before {
 }
 
 .hero__title {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: italic;
+  color: #030526;
   display: flex;
   flex-direction: column;
-  font-size: 32px;
-  font-weight: bold;
   text-align: center;
-  line-height: 1.2;
-  font-weight: 300;
-  font-style: italic;
-  color: #001215;
-  color: #ed5c5c;
-  color: #b62d49;
-  color: #d9145c;
-  color: #ed5c5c;
-  color: #030526;
+  gap: 0px;
 }
 
 .footer {
+  font-size: 0.8rem;
+  line-height: 1.3;
   height: 50px;
+  padding: 0 15px 0 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 15px 0 50px;
-  font-size: 0.8rem;
-  line-height: 1.3;
   flex-shrink: 0;
   position: relative;
 }
 
 .footer__text {
-  /*background-color: #ed5c5c;*/
-  background-color: #d4cb5a;
-  background-color: #d9c148;
-  background-color: #d9145c;
-  background-color: #001215;
-  background-color: #ed5c5c;
-
-  color: #080a40;
   font-family: "IBM Plex Mono", monospace;
+  font-style: italic;
   font-size: 0.8rem;
   font-weight: 400;
-  font-style: italic;
   border-radius: 15px;
   border: none;
+  background-color: #080a40;
+  color: white;
   padding: 5px;
+}
+
+.info-btn {
+  height: 40px;
+  font-family: "IBM Plex Mono", monospace;
+
+  font-size: 0.8rem;
+  font-weight: 400;
+  background-color: #080a40;
+  color: #d9c148;
+  border: none;
+  cursor: pointer;
 }
 
 /* Responsiv design */
@@ -163,5 +152,10 @@ body::before {
 @media (min-width: 768px) {
   .header__subtitle {
     display: block;
+  }
+
+  .hero__title {
+    flex-direction: row;
+    gap: 10px;
   }
 }

@@ -26,9 +26,7 @@ function App() {
           <span>MATTER.</span>
         </h1>
       </section>
-      <footer className="footer">
-        <button className="footer__text">INFO</button>
-      </footer>
+      <button className="info-btn">[ about ]</button>
     </main>
   );
 }
