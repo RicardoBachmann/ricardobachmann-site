@@ -21,6 +21,8 @@ body {
 }
 
 main {
+  width: 100%;
+  max-width: 1200px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,12 +40,23 @@ body::before {
   background-color: #ed5c5c;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 40px;
+  width: 100vw;
+  height: 1px;
+  background-color: #ed5c5c;
+  z-index: 100;
+}
+
 .header {
   height: 40px;
   display: flex;
   align-items: center;
   padding: 0 15px 0 60px;
-  border-bottom: 1px solid #ed5c5c;
+  border-bottom: none;
   flex-shrink: 0;
 }
 
@@ -150,12 +163,29 @@ body::before {
 /* Responsiv design */
 
 @media (min-width: 768px) {
+  body {
+    max-width: 1200px;
+  }
+
   .header__subtitle {
     display: block;
+  }
+
+  .header__container {
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
   }
 
   .hero__title {
     flex-direction: row;
     gap: 10px;
+  }
+
+  .hero {
+    padding: 0 60px 0 80x;
+  }
+  .sidebar__text {
+    font-size: 1rem;
   }
 }
