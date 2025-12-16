@@ -30,7 +30,11 @@ function App() {
         </div>
         <section className="content__detail">
           <div className="content__detail_contact">
-            <h3>[Contact]</h3>
+            <h3>
+              <span className="bracket">[</span>
+              Contact
+              <span className="bracket">]</span>
+            </h3>
 
             <p>
               Based in <br />
