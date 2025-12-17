@@ -147,17 +147,88 @@ a {
 
 /* Responsiv design */
 
+.desktop-nav {
+  display: none;
+}
+
+/* === Tablet === */
 @media (min-width: 768px) {
   body {
-    max-width: 1200px;
+    max-width: 100vw;
   }
 
-  .hero__title {
-    flex-direction: row;
-    gap: 10px;
+  body::before {
+    content: "";
+    position: fixed;
+    left: 40px;
+    top: 0;
+    width: 1px;
+    height: 100vh;
+    z-index: 100;
+    background-color: #ed5c5c;
   }
 
-  .hero {
-    padding: 0 60px 0 80x;
+  body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 100vw;
+    height: 1px;
+    background-color: #ed5c5c;
+    z-index: 100;
+  }
+}
+
+/* === Desktop === */
+
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 70px;
+    padding: 0 40px;
+  }
+  .desktop-nav__name {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .desktop-nav__link {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .desktop-nav__links {
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    left: 40px;
+    top: 0;
+    width: 1px;
+    height: 100vh;
+    z-index: 100;
+    background-color: #ed5c5c;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 100vw;
+    height: 1px;
+    background-color: #ed5c5c;
+    z-index: 100;
   }
 }
