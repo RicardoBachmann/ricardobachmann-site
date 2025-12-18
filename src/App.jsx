@@ -50,6 +50,11 @@ function App() {
         {/* Column 2 */}
         <section className="grid-column">
           <div className="grid-column__content">
+            <h3>
+              <span className="bracket">[</span>
+              Contact
+              <span className="bracket">]</span>
+            </h3>
             <p>
               Based in <br />
               Hamburg, GER
