@@ -3,20 +3,14 @@ import "./index.css";
 function App() {
   return (
     <>
-      {/* Navigation for Desktop */}
-      <nav className="desktop-nav">
-        <span className="desktop-nav__name">Ricardo Bachmann</span>
-        <div className="desktop-nav__links">
-          <a className="desktop-nav__link">
-            <span className="bracket">[</span> Contact{" "}
-            <span className="bracket">]</span>
-          </a>
-          <a className="desktop-nav__link">
-            <span className="bracket">[</span> What i do{" "}
-            <span className="bracket">]</span>
-          </a>
-        </div>
-      </nav>
+      {/* Header for Desktop */}
+      <header className="desktop-header">
+        <span className="desktop-header__name">Ricardo Bachmann</span>
+        <span className="desktop-header__tagline">
+          Visualizing geo-social conflicts. Mapping where technology, atmosphere
+          & matter become political.
+        </span>
+      </header>
 
       <section className="hero">
         <h1 className="hero__title">

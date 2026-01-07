@@ -199,42 +199,33 @@ body::after {
     overflow: hidden;
   }
 
-  /* === NAVIGATION === */
+  /* === HEADER === */
 
-  .desktop-nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+  .desktop-header {
+    display: flex;
     align-items: center;
+    gap: 40px;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100vw;
-    max-width: 100vw;
     height: 70px;
-    padding: 0;
-    z-index: 200;
-  }
-  .desktop-nav__name {
-    grid-column: 1 / 3;
     padding-left: 40px;
-    font-size: 1rem;
-    font-weight: 400;
+    z-index: 200;
+    background-color: transparent;
   }
 
-  .desktop-nav__link {
+  .desktop-header__name {
     font-size: 1rem;
     font-weight: 400;
     color: #030526;
-    text-decoration: none;
-    padding-left: 80px;
   }
 
-  .desktop-nav__links {
-    grid-column: 3 / 6;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  .desktop-header__tagline {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #030526;
   }
-
   /* === GRID LINES === */
 
   body::before {
@@ -319,6 +310,11 @@ body::after {
   .grid-column:first-child {
     grid-column: 1 / 3; /* From column 1 to 3 (= 2 columns) */
     padding-left: 40px;
+  }
+
+  .grid-column:first-child .grid-column__content {
+    margin-left: 0; /* no extra margin */
+    max-width: 100%; /* Keine width-Beschränkung */
   }
 
   /* 2. Columns (Contact) = Grid-Column 3 */
