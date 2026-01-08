@@ -27,6 +27,41 @@ main {
   flex-direction: column;
 }
 
+/* === HEADER === */
+
+.desktop-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40px;
+  z-index: 200;
+  background-color: #fbfaf4;
+}
+
+.desktop-header__name {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #030526;
+}
+
+.desktop-header__tagline {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #030526;
+}
+
+.mobile-header__tagline {
+  display: none;
+}
+
+.geo-social__tagline {
+  font-style: italic;
+}
+
 /* === GRID LINES === */
 body::before {
   content: "";
@@ -35,7 +70,7 @@ body::before {
   top: 0;
   width: 1px;
   height: 100vh;
-  z-index: 100;
+  z-index: 400;
   background-color: #ed5c5c;
 }
 
@@ -69,22 +104,11 @@ body::after {
   padding: 50px 35px 120px 35px;
 }
 
-.hero__name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #030526;
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  padding: 180px 35px 100px 35px;
-}
-
 /* === CONTENT SECTION === */
 
 .grid-column {
   min-height: 50vh;
-  padding: 0 20px 80px 20px;
+  padding: 0 20px 50px 20px;
 }
 
 .grid-column__content {
@@ -143,9 +167,37 @@ body::after {
     background-color: #fbfaf4;
   }
 
-  .hero__name {
-    font-size: 1.8rem;
-    padding: 80px 20px 40px 40px;
+  /* === Header === */
+
+  .desktop-header {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 40px;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    padding-left: 40px;
+    z-index: 200;
+    background-color: transparent;
+  }
+
+  .desktop-header__name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #030526;
+  }
+
+  .desktop-header__tagline {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #030526;
+  }
+
+  .mobile-header__tagline {
+    display: inline;
   }
 
   .hero__title {
@@ -204,6 +256,7 @@ body::after {
   .desktop-header {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 40px;
     position: fixed;
     top: 0;
@@ -225,6 +278,10 @@ body::after {
     font-size: 0.85rem;
     font-weight: 400;
     color: #030526;
+  }
+
+  .mobile-header__tagline {
+    display: inline;
   }
   /* === GRID LINES === */
 
@@ -266,10 +323,6 @@ body::after {
 
   .hero__title {
     font-size: 7rem;
-  }
-
-  .hero__name {
-    display: none;
   }
 
   /* === MAIN = GRID CONTAINER === */

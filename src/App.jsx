@@ -7,8 +7,11 @@ function App() {
       <header className="desktop-header">
         <span className="desktop-header__name">Ricardo Bachmann</span>
         <span className="desktop-header__tagline">
-          Visualizing geo-social conflicts. Mapping where technology, atmosphere
-          & matter become political.
+          Visualizing <span className="geo-social__tagline">geo-social</span>{" "}
+          conflicts.{" "}
+          <span className="mobile-header__tagline">
+            Mapping where technology, atmosphere & matter become political.
+          </span>
         </span>
       </header>
 
@@ -18,7 +21,6 @@ function App() {
           <span>Atmosphere,</span>
           <span>Matter.</span>
         </h1>
-        <h2 className="hero__name">Ricardo Bachmann</h2>
       </section>
       <main>
         {/* Column 1 */}
