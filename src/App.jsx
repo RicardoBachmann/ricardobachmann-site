@@ -10,7 +10,7 @@ function App() {
           Visualizing <span className="geo-social__tagline">geo-social</span>{" "}
           conflicts.{" "}
           <span className="mobile-header__tagline">
-            Mapping where technology, atmosphere & matter become political.
+            Mapping where sensing, atmosphere & matter become political actors.
           </span>
         </span>
       </header>
@@ -28,17 +28,21 @@ function App() {
           <div className="grid-column__content">
             <p>
               Visualizing geo-social conflicts.
-              <br /> Mapping where technology, atmosphere & matter <br />
-              become political.
+              <br /> Mapping where sensing, atmosphere & matter become political
+              actors.
             </p>{" "}
             <p>
-              I am a Multi-disciplinary Cartographer & Researcher. Observing how
-              technological systems and environmental phenomena establish
-              dynamic networks in moments of uncertainty and change, because in
-              stabile situations the networks are invisible.Observing how
-              technological systems and environmental phenomena establish
-              dynamic networks in moments of uncertainty and change, because in
-              stabile situations the networks are invisible.{" "}
+              I am a multi-disciplinary cartographer, tackling how technological
+              systems and environmental phenomena establish dynamic networks in
+              moments of uncertainty and change. <br /> My work maps dependency
+              chains between these actors & agents, making visible the material
+              entanglements that shape geo-social conflicts—and that traditional
+              maps systematically hide.
+              <br /> Working at the intersection of cartographic design, earth
+              systems science, and investigative research—I trace atmospheric
+              processes, infrastructural networks, and material flows to produce
+              counter-cartographies that reveal how territorial conflicts are
+              materially grounded.{" "}
             </p>
           </div>
         </section>
