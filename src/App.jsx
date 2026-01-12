@@ -26,7 +26,7 @@ function App() {
         {/* Column 1 */}
         <section className="grid-column">
           <div className="grid-column__content">
-            <p>
+            <p className="grid-column__tagline">
               Visualizing geo-social conflicts.
               <br /> Mapping where sensing, atmosphere & matter become political
               actors.
@@ -34,15 +34,18 @@ function App() {
             <p>
               I am a multi-disciplinary cartographer, tackling how technological
               systems and environmental phenomena establish dynamic networks in
-              moments of uncertainty and change. <br /> My work maps dependency
-              chains between these actors & agents, making visible the material
-              entanglements that shape geo-social conflicts—and that traditional
-              maps systematically hide.
-              <br /> Working at the intersection of cartographic design, earth
-              systems science, and investigative research—I trace atmospheric
-              processes, infrastructural networks, and material flows to produce
-              counter-cartographies that reveal how territorial conflicts are
-              materially grounded.{" "}
+              moments of uncertainty and change.
+              <br /> <p />{" "}
+              <p>
+                My work maps dependency chains between these actors & agents,
+                making visible the material entanglements that shape geo-social
+                conflicts—and that traditional maps systematically hide.
+                <br /> Working at the intersection of cartographic design, earth
+                systems science, and investigative research—I trace atmospheric
+                processes, infrastructural networks, and material flows to
+                produce counter-cartographies that reveal how territorial
+                conflicts are materially grounded.{" "}
+              </p>
             </p>
           </div>
         </section>
