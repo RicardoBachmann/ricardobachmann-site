@@ -305,13 +305,11 @@ body::after {
   }
 
   .desktop-header__name {
-    font-size: 1rem;
     font-weight: 400;
     color: #030526;
   }
 
   .desktop-header__tagline {
-    font-size: 1rem;
     font-weight: 400;
     color: #030526;
   }
