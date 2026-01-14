@@ -179,7 +179,7 @@ body::after {
     display: none;
   }
 
-  /* === Header === */
+  /* Header */
 
   .desktop-header {
     display: flex;
